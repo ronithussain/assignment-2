@@ -3,14 +3,22 @@
     box-sizing: border-box;
 }
 
-article {
-    background-color: rgb(204, 176, 176);
+/* inter-font-style */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    background: rgba(0, 0, 0, 0.940);
 }
 
 .container {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
-    background: rebeccapurple;
 }
 
 /* _________shared style_________ */
@@ -22,69 +30,72 @@ article {
     text-align: center;
 }
 
-.bg-color {
-    background: rebeccapurple;
-}
-
 /* _________navigation style_________ */
+
 .navigation {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
+    margin-top: 50px;
 }
 
 .nav-items {
     align-items: center;
-    border: 1px solid black;
-    padding: 1px 30px 1px 0;
-    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 30px 3px 0;
+    border-radius: 1.40rem;
 }
 
 .nav-items li {
-    margin-left: 40px;
+    margin-left: 50px;
     list-style: none;
 }
 
 .nav-items a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
     font-weight: 500;
 }
 
 .nav-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(226, 82, 30);
+    color: rgba(230, 83, 60, 1);
+
 }
 
 #home {
-    border: 1px solid red;
-    padding: 8px 30px;
+    padding: 12px 30px;
     border-radius: 20px;
-    margin-left: 0;
-    background: rgb(199, 68, 20);
+    margin-left:0;
+    background: rgba(230, 83, 60, 1);
+
+}
+
+.ham-burger {
+    color: white;
+    display: none;
+    font-size: 40px;
 }
 
 /* ____________banner-container style_____________ */
 .banner-container {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
-    border: 2px solid;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .banner-text {
-    border: 2px solid red;
-    width: 50%;
+    width: 65%;
 }
 
 .banner-image {
-    border: 2px solid red;
-    width: 30%;
+    /* border: 2px solid red; */
+    width: 33%;
     position: relative;
 }
 
@@ -94,50 +105,86 @@ article {
 }
 
 .banner-title {
-    font-size: 7rem;
-    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    font-size: 8rem;
+    font-weight: 700;
     padding-top: 1em;
+    line-height: 130px;
+}
+
+#shape {
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    line-height: 90px;
+    font-weight: 400;
 }
 
 .banner-description {
-    width: 350px;
-    font-size: 18px;
-    padding: 18px 0px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 30px;
+    width: 600px;
+    margin: 40px 0;
+}
+
+.button-primary {
+    display: flex;
+    gap: 20px;
 }
 
 .banner-btn {
-    width: 220px;
+    width: 250px;
     height: 60px;
-    border: 1px solid;
-    padding: 1.25rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 1.30rem 2rem;
     border-radius: 2rem;
     font-size: 18px;
-    /* color: white; */
-    font-weight: 570;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.940);
 }
 
 #banner-btn {
-    background: rgb(226, 82, 30);
+    background: rgba(230, 83, 60, 1);
     border: none;
 }
 
 /* ______video tutorial______ */
 #video-badge {
-    width: 170px;
-    height: 90px;
-    border: 1px solid rgb(56, 48, 48);
+    width: 230px;
+    height: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 80%;
-    left: -50px;
+    left: -25%;
     background: rgba(63, 50, 50, 0.281);
     backdrop-filter: blur(6px);
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.div-dot {
+    background: rgba(230, 83, 60, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+}
+.fa-solid{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    top: 32%;
+    left: 40%;
 }
 
 #workout-badge {
-    width: 190px;
-    height: 95px;
-    border: 1px solid rgb(56, 48, 48);
+    width: 230px;
+    height: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 22%;
     left: 60%;
@@ -147,66 +194,58 @@ article {
 }
 
 .video-tutorial {
-    color: aliceblue;
-    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3rem;
     font-weight: 700;
 }
 
 .workout-video {
-    color: aliceblue;
-    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.8rem;
     font-weight: 700;
 }
 
 #video-tutorial,
 #workout-video {
-    color: gray;
-    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
     font-weight: 300;
 }
 
 /* _____________habit-container_____________ */
-main article {
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.habit-container {
-    border: 2px solid red;
-}
 
 .habit-content {
     width: 700px;
     margin: 0 auto;
-    /* padding: 2rem; */
-    border: 1px solid yellowgreen;
+    margin-top: 70px;
 }
 
 .habit-title {
-    color: aliceblue;
-    font-size: 4rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.5rem;
     font-weight: 700;
     margin: 10px 0;
 }
 
 .habit-description {
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 25px;
 }
 
 /*____________habit image container___________ */
 .habit-image-container {
     margin-top: 1.8rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    gap: 2.4rem;
     padding: 1rem;
 }
 
 .habit-image {
     width: 300px;
-    /* height: 250px; */
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
 }
 
 .habit-image img {
@@ -218,75 +257,163 @@ main article {
 .habit-image h5 {
     font-size: 1.45rem;
     margin: 5px 0;
-    color: white;
+    color: rgba(255, 255, 255, 1);
+
 }
 
 .habit-image p {
-    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
     margin: 5px 0;
 }
 
 /* ________mile-container________ */
 .mile-container {
-    border: 2px solid magenta;
-    padding: 20px 20px 20px 35px;
+    padding: 22px 25px 22px 45px;
     justify-content: space-between;
-    /* align-items: center; */
-    gap: 5rem;
-    background: rgba(24, 22, 22, 0.658);
+    background: rgba(34, 34, 34, 1);
     border-radius: 20px;
-}
-
-.mile-text {
-    /* padding-top: 30px; */
-    border: 1px solid;
+    margin-top: 70px;
 }
 
 .mile-title {
-    color: white;
-    font-size: 4rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.5rem;
     font-weight: 700;
     margin: 10px 0;
 }
 
 .mile-description {
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
     font-weight: 500;
-    margin: 20px 0;
+    margin: 30px 0;
+    line-height: 20px;
+    max-width: 450px;
+}
+.mile-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .mile-image {
-    width: 50%;
+    width: 40%;
 }
 
 .mile-image img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    border: 1px solid white;
 }
+
 #join-now-btn {
-    background: rgb(226, 82, 30);
+    background: rgba(230, 83, 60, 1);
     border: none;
+}
+/* ________________BMI-section________________ */
+.bmi-section{
+    margin-top: 100px;
+}
+.bmi-title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+.bmi-description{
+    width: 650px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 25px;
+    margin: 15px 0;
+}
+table{
+    border-collapse: collapse; 
+    /* margin-top: 5rem; */
+}
+th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    padding: 1rem 1.5rem;
+}
+th{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+/* ___________calculate-section___________ */
+.calculate-section{
+    background: rgba(34, 34, 34, 1);
+    margin-top: 5.8rem;
+
+}
+.calculator-container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 3rem 0.2rem 5rem;
+}
+.bmi-table{
+    width: 30%;
+    border: 1px solid yellowgreen;
+}
+.bmi-calculator{
+    width: 60%;
+    border: 1px solid yellowgreen;
+}
+/* ________form-container_________ */
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 18px;
+}
+.form-field{
+    width: 48%;
+
+}
+.form-field-text-area{
+    width: 100%;
+}
+.form-container input,select{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    
+}
+select,option{
+    color: rgba(177, 169, 169, 0.6);
+}
+.calculate-btn{
+    width: 250px;
+    height: 60px;
+    padding: 1.30rem 2rem;
+    border-radius: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgba(230, 83, 60, 1);
+    border: none;
+    margin-top: 2rem;
+   
 }
 
 /* ___________teams-container__________ */
-.our-team {
-    border: 2px solid;
-    padding-bottom: 4rem;
-    background: rgba(29, 27, 27, 0.918);
-}
-
-.teams-container {
-    border: 1px solid white;
+.teams-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .teams-image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.8rem;
-    background: rgba(17, 17, 17, 0.884);
-    padding: 1.8rem;
+    gap: 1rem;
+    background: rgba(29, 27, 27, 0.918);
+    padding: 1.5rem;
     border-radius: 10px;
     margin-top: 2rem;
 }
@@ -303,56 +430,68 @@ main article {
 
 .clint-name {
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 15px;
 }
 
-.clint-name h3,
-p {
-    color: white;
+.clint-name h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+
+.clint-name p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
 }
 
 /* _______________Footer-container______________ */
+.footer-section {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .footer-container {
+    max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid red; */
     gap: 7rem;
     padding-left: 1rem;
-    padding-top: 2.8rem;
+    padding-top: 3rem;
 }
 
 .footer-title {
     font-size: 5rem;
     font-weight: bold;
-    color: rgb(226, 82, 30);
+    color: rgba(230, 83, 60, 1);
 }
 
 .footer-description {
-    width: 350px;
-    color: rgb(221, 201, 201);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
+    line-height: 25px;
 }
 
 .get-started h4 {
     font-size: 2.5rem;
-    color: aliceblue;
+    color: rgba(255, 255, 255, 1);
 }
 
 .get-started p {
-    color: rgb(221, 201, 201);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1.50rem;
     line-height: 3rem;
 }
 
-.footer-section hr {
-    margin: 3rem 7rem;
-}
+ .horizontal-line hr{
+    margin: 3vw 8vw ;
+    border: 2px solid rgba(255, 255, 255, 0.1)
+ }
 
 .copyright {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 26px;
-    color: whitesmoke;
+    padding-bottom: 2rem;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* __________________________________
@@ -360,20 +499,25 @@ p {
          ___________________________*/
 @media screen and (max-width:576px) {
     .container {
-        width: 90%;
+        width: 80%;
     }
 
-    .nav-title {
-        margin-right: 300px;
+    .navigation {
+        width: 80%;
+        padding: 0;
     }
 
     .nav-items {
         display: none;
     }
 
-    .navigation,
+    .ham-burger {
+        display: block;
+    }
+
     .banner-container {
         flex-direction: column;
+        width: 85%;
     }
 
     .banner-text {
@@ -381,12 +525,24 @@ p {
     }
 
     .banner-title {
-        font-size: 4rem;
+        font-size: 3rem;
+        line-height: 90px;
+    }
+
+    #shape {
+        font-size: 8rem;
     }
 
     .banner-description {
+        width: 350px;
+        margin: 20px 0px;
+    }
+
+    .banner-btn {
         width: 250px;
-        margin: 15px 0px;
+        height: 60px;
+        padding: 1.30rem 2rem;
+        font-size: 14px;
     }
 
     .banner-image {
@@ -394,30 +550,43 @@ p {
         width: 100%;
     }
 
-    .banner-btn {
-        width: 180px;
-        font-size: 16px;
-    }
-
     /* _____________badge__________ */
-    #workout-badge {
-        top: 5%;
-        left: 55%;
-    }
-
     #video-badge {
+        width: 200px;
+        height: 100px;
         top: 47%;
         left: -5%;
     }
 
+    .video-tutorial {
+        font-size: 2.5rem;
+    }
+
+    #workout-badge {
+        top: 5%;
+        left: 53%;
+        width: 180px;
+        height: 100px;
+    }
+
+    .workout-video {
+        font-size: 3.5rem;
+    }
+
+    #video-tutorial,
+    #workout-video {
+        font-size: 0.9rem;
+    }
+
     /* _____________Habit-container_____________ */
+
     .habit-content {
         width: 350px;
-        /* margin: 0 auto; */
+        margin: 0 auto;
     }
 
     .habit-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .habit-image-container {
@@ -434,7 +603,12 @@ p {
     .mile-title {
         font-size: 2.6rem;
     }
-
+    .mile-description{
+        width: 300px;
+    }
+    .mile-text{
+        width: 100%;
+    }
     .mile-image {
         width: 100%;
     }
@@ -444,6 +618,25 @@ p {
         background: rgb(226, 82, 30);
         border: none;
     }
+    /* _______________bmi-section______________ */
+    .calculate-section{
+        background: rgba(34, 34, 34, 1);
+        margin-top: 2.8rem;
+    
+    }
+    .calculator-container{
+        flex-direction: column;
+    }
+    .bmi-description{
+        width: 100%;
+    }
+    .bmi-table{
+        width: 100%;
+    }
+    .bmi-calculator{
+        width: 100%;
+    }
+
 
     /* ________________teams-container_______________ */
     .teams-container {
@@ -462,9 +655,5 @@ p {
     .team-image img {
         width: 100%;
         height: 350px;
-    }
-
-    .footer-section hr {
-        margin: 3rem 1rem;
     }
 }
