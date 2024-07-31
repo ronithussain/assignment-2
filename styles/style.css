@@ -342,11 +342,23 @@ body {
     grid-row: 1/span 6;
     position: relative;
 }
+.name-1{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 10%;
+}
 .image-2{
     background: yellow;
     grid-column: 5/span 5;
     grid-row: 1/span 6;
     position: relative;
+}
+.name-2{
+    position: absolute;
+    color: white;
+    top: 15%;
+    left: 10%;
 }
 .image-3{
     background: green;
@@ -360,23 +372,29 @@ body {
     grid-row: 7/span 6;
     position: relative;
 }
+.name-4{
+    position: absolute;
+    color: white;
+    top: 15%;
+    left: 60%;
+}
 .image-5{
     background: blue;
     grid-column: 6/span 3;
     grid-row: 7/span 6;
     position: relative;
 }
+.name-5{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 10%;
+}
 .image-6{
     background: red;
     grid-column: 9/span 4;
     grid-row: 7/span 6;
     position: relative;
-}
-.name{
-    position: absolute;
-    color: white;
-    top: 80%;
-    left: 10%;
 }
 .training-image-container img{
     width: 100%;
@@ -390,12 +408,30 @@ body {
 .bmi-section{
     margin-top: 100px;
 }
+.bmi-content{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
 .bmi-title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.bmi-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 25px;
+    width: 600px;
+}
+.calc-title{
     color: rgba(255, 255, 255, 1);
     font-size: 1.8rem;
     margin: 3rem 0;
 }
-.bmi-description{
+.calc-description{
     width: 650px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
@@ -410,7 +446,7 @@ th,td{
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
 }
 th{
     font-size: 16px;
@@ -702,15 +738,24 @@ select,option{
         width: 350px;
     }
     /* _______________bmi-section______________ */
+    .bmi-content{
+       width: 400px;
+       margin-left: 25px;
+    }
+    .bmi-title{
+        font-size: 3rem;
+    }
+    .bmi-description{
+        width: 350px;
+    }
     .calculate-section{
         background: rgba(34, 34, 34, 1);
         margin-top: 2.8rem;
-    
     }
     .calculator-container{
         flex-direction: column;
     }
-    .bmi-description{
+    .calc-description{
         width: 100%;
     }
     .bmi-table{
