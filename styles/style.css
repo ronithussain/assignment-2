@@ -19,6 +19,7 @@ body {
 .container {
     max-width: 80%;
     margin: 0 auto;
+    /* border: 1px solid magenta; */
 }
 
 /* _________shared style_________ */
@@ -77,9 +78,9 @@ body {
 }
 
 .ham-burger {
-    color: white;
+   color:red;
     display: none;
-    font-size: 40px;
+    font-size: 10px;
 }
 
 /* ____________banner-container style_____________ */
@@ -87,6 +88,7 @@ body {
     max-width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
+    /* border: 1px solid green; */
 }
 
 .banner-text {
@@ -234,13 +236,10 @@ body {
 }
 
 /*____________habit image container___________ */
-.habit-image-container {
-    margin-top: 1.8rem;
-    /* border: 2px solid red; */
-    justify-content: space-evenly;
+.habit-image-container{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 2.4rem;
-    padding: 1rem;
 }
 
 .habit-image {
@@ -559,17 +558,14 @@ select,option{
 }
 
 .footer-container {
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* border: 1px solid red; */
-    gap: 7rem;
+  display: flex;
+  justify-content: space-between;
     padding-left: 1rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .footer-title {
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: bold;
     color: rgba(230, 83, 60, 1);
 }
@@ -578,6 +574,7 @@ select,option{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     line-height: 25px;
+    width: 530px;
 }
 
 .get-started h4 {
@@ -771,17 +768,157 @@ select,option{
         margin-top: 30px;
     }
 
-    .teams-image-container,
-    .footer-container {
+    .teams-image-container {
         grid-template-columns: 1fr;
     }
-
-    .footer-container {
-        gap: 2.8rem;
-    }
-
     .team-image img {
         width: 100%;
         height: 350px;
     }
+    .footer-container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .footer-description{
+        width: 300px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .navigation {
+        max-width: 90%;   
+        padding: 0;
+    }
+    .banner-container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .banner-text {
+        width: 100%;
+    }
+    .banner-title {
+        font-size: 6rem;
+    }
+    #shape {
+        font-size: 12rem;
+    }
+    
+    .banner-image {
+        /* border: 2px solid red; */
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #video-badge {
+        width: 230px;
+        height: 120px;
+        top: 60%;
+        left: 0%;
+    }
+    .video-tutorial {
+        font-size: 2.9rem;
+    }
+
+    #workout-badge {
+        top: 5%;
+        left: 53%;
+        width: 230px;
+        height: 130px;
+    }
+
+    .workout-video {
+        font-size: 4rem;
+    }
+
+    #video-tutorial,
+    #workout-video {
+        font-size: 1rem;
+    }
+    /* ______habit-container______ */
+     .container {
+        max-width: 90%;
+    } 
+    .habit-content {
+        width: 800px;
+    }
+    .habit-description {
+        width: 500px;
+        margin: 0 auto;
+    }
+    /* habit-image-container */
+    .habit-image-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .habit-image img{
+        width: 100%;
+        padding: 2rem;
+    }
+    .habit-image p {
+       width: 200px;
+       margin: 0 auto;
+    }
+    /* ________Mile-container_________ */
+    .mile-container {
+        padding: 35px 35px 35px 55px;
+        gap: 2rem;
+    }
+    .mile-title {
+        font-size: 2.88rem;
+    }
+    .mile-description{
+        width: 290px;
+    }
+    .mile-text{
+        width: 100%;
+    }
+    .mile-image {
+        width: 100%;
+    }
+    /* _______________bmi-section______________ */
+    .bmi-content{
+        width: 400px;
+        margin-left: 45px;
+     }
+     .calculator-container{
+         flex-direction: column;
+     }
+     .calc-description{
+         width: 90%;
+     }
+     .bmi-table{
+         width: 100%;
+     }
+     .bmi-calculator{
+         width: 100%;
+     }
+     /* ________________teams-container_______________ */
+    .teams-container {
+        margin-top: 30px;
+    }
+    .teams-image-container {
+        gap: 1.8rem;
+        padding: 1.8rem;
+        border-radius: 20px;
+    }
+    .team-image img {
+        width: 100%;
+        height: 360px;
+        border-radius: 20px;
+    }
+    /*_________footer-container_________ */
+    .footer-container{
+        max-width: 70%;
+        flex-wrap: wrap;
+        margin-left: 45px;
+        gap: 5rem;
+        padding-left: 0;
+    }
+    .footer-description{
+        width: 600px;
+    }
+    .horizontal-line hr{
+        margin: 5vw 5vw;
+    }
+
 }
