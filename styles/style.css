@@ -78,9 +78,9 @@ body {
 }
 
 .ham-burger {
-   color:red;
-    display: none;
-    font-size: 10px;
+   color:rgba(255, 255, 255, 1);
+    /* display: none; */
+    font-size: 42px;
 }
 
 /* ____________banner-container style_____________ */
@@ -175,7 +175,7 @@ body {
     border-radius: 50px;
     position: relative;
 }
-.fa-solid{
+.fa-play{
     position: absolute;
     color: white;
     font-size: 15px;
