@@ -36,7 +36,7 @@ body {
 .navigation {
     max-width: 80%;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1rem;
@@ -88,7 +88,7 @@ body {
     max-width: 80%;
     margin: 0 auto;
     justify-content: space-evenly;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .banner-text {
@@ -589,7 +589,7 @@ select,option{
 }
 
  .horizontal-line hr{
-    margin: 3vw 8vw ;
+    margin: 3vw auto ;
     border: 2px solid rgba(255, 255, 255, 0.1)
  }
 
@@ -606,6 +606,7 @@ select,option{
 @media screen and (max-width:576px) {
     .container {
         max-width: 90%;
+       
     }
 
     .navigation {
@@ -624,6 +625,7 @@ select,option{
     .banner-container {
         flex-direction: column;
         max-width: 90%;
+       
     }
 
     .banner-text {
@@ -736,14 +738,14 @@ select,option{
     }
     /* _______________bmi-section______________ */
     .bmi-content{
-       width: 400px;
+       width: 350px;
        margin-left: 25px;
     }
     .bmi-title{
         font-size: 3rem;
     }
     .bmi-description{
-        width: 350px;
+        width: 310px;
     }
     .calculate-section{
         background: rgba(34, 34, 34, 1);
@@ -753,7 +755,7 @@ select,option{
         flex-direction: column;
     }
     .calc-description{
-        width: 100%;
+        width: 80%;
     }
     .bmi-table{
         width: 100%;
@@ -783,13 +785,19 @@ select,option{
         width: 300px;
     }
 }
+
+
+
+
+
+/* ______responsive for medium devices______ */
 @media screen and (min-width:576px) and (max-width:992px){
     .navigation {
-        max-width: 90%;   
+        max-width: 100%;   
         padding: 0;
     }
     .banner-container {
-        max-width: 90%;
+        max-width: 100%;
         flex-direction: column;
     }
     .banner-text {
@@ -835,7 +843,7 @@ select,option{
     }
     /* ______habit-container______ */
      .container {
-        max-width: 90%;
+        max-width: 100%;
     } 
     .habit-content {
         width: 800px;
